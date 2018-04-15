@@ -6,8 +6,8 @@
             --disable-static                         \
             --disable-kill                           \
             --with-systemd
-make -j $SHED_NUMJOBS
-make DESTDIR=${SHED_FAKEROOT} install
-mkdir -v ${SHED_FAKEROOT}/lib
-mv -v ${SHED_FAKEROOT}/usr/lib/libprocps.so.* ${SHED_FAKEROOT}/lib
-ln -sfv ../../lib/$(readlink ${SHED_FAKEROOT}/usr/lib/libprocps.so) ${SHED_FAKEROOT}/usr/lib/libprocps.so
+make -j $SHED_NUM_JOBS
+make DESTDIR=${SHED_FAKE_ROOT} install
+mkdir -v ${SHED_FAKE_ROOT}/lib
+mv -v ${SHED_FAKE_ROOT}/usr/lib/libprocps.so.* ${SHED_FAKE_ROOT}/lib
+ln -sfv ../../lib/$(readlink ${SHED_FAKE_ROOT}/usr/lib/libprocps.so) ${SHED_FAKE_ROOT}/usr/lib/libprocps.so
