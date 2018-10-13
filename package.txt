@@ -1,6 +1,6 @@
 NAME=procps-ng
 VERSION=3.3.15
-REVISION=1
+REVISION=2
 SRC=https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.15.tar.xz
 SRCMD5=2b0717a7cb474b3d6dfdeedfbad2eccc
 OPTIONS=bootstrap|release (docs)
